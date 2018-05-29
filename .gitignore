@@ -1,0 +1,7 @@
+.firebaserc
+database-rules.json
+firebase.json
+firebase-debug.log
+firestore.rules
+firestore.indexes.json
+storage.rules

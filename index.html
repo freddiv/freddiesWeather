@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en-us" ng-app="weatherApp">
+<head>
+    <title>AngularJS Weather Forecast SPA</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/ui-bootstrap-csp.css" rel="stylesheet" />
+    <style>
+        html, body, input, select, textarea {
+            font-size: 1.05em !important;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AngularJS Weather</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <map-geo-location height="400" width="600"></map-geo-location>
+        <div ng-view></div>
+
+    </div>
+    <script src="angular.min.js"></script>
+        <script src="Scripts/angular-route.min.js"></script>
+        <script src="Scripts/angular-resource.min.js"></script>
+        <script src="Scripts/angular-animate.min.js"></script>
+        <script src="Scripts/angular-touch.min.js"></script>
+        <script src="/jquery/dist/jquery.min.js"></script>
+        <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+           
+        <script src="app/app.js"></script>
+        <script src="app/routes/routes.js"></script>
+        <script src="app/directives/weatherReport.js"></script>
+        <script src="app/directives/linkDemo.js"></script>
+        <script src="app/services/cityService.js"></script>
+        <script src="app/services/countryService.js"></script>
+        <script src="app/services/weatherService.js"></script>
+        <script src="app/controllers/homeController.js"></script>
+        <script src="app/controllers/forecastController.js"></script>
+        <script src="app/controllers/tabsDemoController.js"></script>
+       
+</body>
+</html>
